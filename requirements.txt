@@ -1,11 +1,11 @@
 hydra-core==1.1.0
-datasets==2.3.2
+datasets>=2.3.2
 rouge-score==0.0.4
 plotly==5.5.0
 psutil
 kaleido==0.2.1
 seqeval==1.2.2
-nlpaug==1.1.10
+nlpaug>=1.1.10
 ruamel.yaml==0.17.20
 scikit-learn==1.0.2
 protobuf==3.19.4
@@ -19,7 +19,7 @@ aioredis
 torch
 bs4
 ray==1.9.1
-transformers==4.20.1
+transformers>=4.20.1
 nltk==3.6.5
 sacrebleu==1.5.0
 pytest==7.1.2
@@ -37,5 +37,7 @@ yargy
 yaspin
 rich
 spacy
+regex
+pybind11==2.10.0
 ipykernel==6.15.1
 small-text

@@ -1,9 +1,9 @@
 output_dir: './workdir/run_active_learning'
 hydra:
   run:
-    dir: ${output_dir}/${now:%Y-%m-%d}/${now:%H-%M-%S}_${seed}_${to_string:${acquisition_model.checkpoint}}
+    dir: ${output_dir}/${now:%Y-%m-%d}/${now:%H-%M-%S}_${seed}_${to_string:${acquisition_model.checkpoint}}_${to_string:${al.strategy}}
   sweep:
-    dir: ${output_dir}/${now:%Y-%m-%d}/${now:%H-%M-%S}_${seed}_${to_string:${acquisition_model.checkpoint}}
+    dir: ${output_dir}/${now:%Y-%m-%d}/${now:%H-%M-%S}_${seed}_${to_string:${acquisition_model.checkpoint}}_${to_string:${al.strategy}}
     subdir: ${hydra.job.num}
 
 seed: 42

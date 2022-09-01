@@ -34,6 +34,7 @@ from al4nlp.utils.cluster_margin import hierarchial_ac
 from al4nlp.constructors.construct_active_learner import (
     construct_active_learner,
     QUERY_STRATEGIES,
+    _get_strategy_from_path
 )
 from al4nlp.constructors import construct_wrapper
 from al4nlp.query_strategies.al_strategy_utils import (
@@ -114,7 +115,10 @@ def initial_split(
                     range_len_data, init_n, replace=False
                 ).tolist()
         else:
-            query_strategy = QUERY_STRATEGIES[strategy]
+            query_strategy = QUERY_STRATEGIES.get(f"{config.strategy}")
+            # In this case, we assume that `config.strategy` refers to the path of the file with the strategy
+            if query_strategy is None:
+                query_strategy = _get_strategy_from_path(config.strategy)
             # TODO: make neater
             strategy_kwargs = config.strategy_kwargs
             if config.sampling_type == "random":

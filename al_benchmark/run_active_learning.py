@@ -33,7 +33,6 @@ def run_active_learning(config, work_dir):
         initial_split,
     )
     from al4nlp.utils.data.load_data import load_data
-    from datasets.arrow_dataset import Dataset
     from al4nlp.utils.transformers_dataset import TransformersDataset
 
     # Log config so that it is visible from the console
