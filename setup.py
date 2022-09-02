@@ -52,7 +52,7 @@ os.system("chmod a+x init.sh examples/*")
 
 setup(
     name="acleto",
-    packages=find_packages(),
+    packages=find_packages(where={"": "acleto"}),
     version="0.0.2",
     description="A Library for active learning. Supports text classification and sequence tagging tasks.",
     author="Tsvigun A., Sanochkin L., Kuzmin G., Larionov D., and Dr Shelmanov A.",
@@ -66,4 +66,4 @@ setup(
     test_suite="tests",
 )
 
-os.system("./init.sh")
+# os.system("./init.sh")
