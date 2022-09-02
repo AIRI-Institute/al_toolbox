@@ -76,7 +76,7 @@ def construct_wrapper(
             framework=framework,
         )
     elif framework == "flair" and model_cfg.checkpoint in FLAIR_MODELS:
-        from al4nlp.model_wrappers.flair import FlairModelWrapper
+        from ..model_wrappers.flair import FlairModelWrapper
 
         TASK2WRAPPER["flair_ner"] = FlairModelWrapper
         TASK_SUBCLASS_KWARGS["flair_ner"] = ["id2label", "num_labels"]

@@ -3,7 +3,7 @@ from pathlib import Path
 from typing import Union, List
 
 import numpy as np
-from al4nlp.utils.general import pickle_load
+from .utils.general import pickle_load
 from tqdm import tqdm
 
 

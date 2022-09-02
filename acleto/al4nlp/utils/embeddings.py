@@ -92,7 +92,7 @@ def load_embeddings(embeddings_path, model_cache_dir=None, n_vectors=None):
 
 def check_models(config):
     """Check if any of a models is a cnn or a custom model, and get params of the model"""
-    from al4nlp.models import PYTORCH_INIT_MODELS_DICT
+    from ..models import PYTORCH_INIT_MODELS_DICT
 
     models_type = ["model", "acquisition_model", "successor_model", "target_model"]
     for model in models_type:

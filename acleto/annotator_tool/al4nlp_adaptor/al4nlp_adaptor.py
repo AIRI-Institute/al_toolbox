@@ -4,12 +4,12 @@ from time import time
 
 import numpy as np
 import pandas as pd
-from al4nlp.constructors.construct_active_learner import construct_active_learner
-from al4nlp.query_strategies.al_strategy_utils import (
+from ...al4nlp.constructors.construct_active_learner import construct_active_learner
+from ...al4nlp.query_strategies.al_strategy_utils import (
     take_idx,
 )
-from al4nlp.utils.general import json_dump
-from al4nlp.utils.transformers_dataset import TransformersDataset
+from ...al4nlp.utils.general import json_dump
+from ...al4nlp.utils.transformers_dataset import TransformersDataset
 
 logger = logging.getLogger()
 

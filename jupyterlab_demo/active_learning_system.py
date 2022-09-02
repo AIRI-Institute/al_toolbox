@@ -23,8 +23,8 @@ from annotator_tool.annotation_converter_bio import AnnotationConverterBio
 
 from datasets import load_dataset
 
-from al4nlp.constructors.construct_wrapper import construct_wrapper
-from al4nlp.utils.transformers_dataset import TransformersDataset
+from acleto.al4nlp.constructors.construct_wrapper import construct_wrapper
+from acleto.al4nlp.utils.transformers_dataset import TransformersDataset
 
 from spacy import displacy
 from nltk.tokenize import RegexpTokenizer

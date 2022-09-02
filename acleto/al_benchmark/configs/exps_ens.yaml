@@ -9,7 +9,7 @@ tasks:
         name: 'pr_var'
         config_path: '../configs/'
         config_name: 'al_ner.yaml'
-        command: './src/run_active_learning.py'
+        command: './acleto/run_active_learning.py'
         environ: ''
         args: 'al.strategy=prob_var_de_ner al.deep_ensemble=True'
         seeds: [ 13, 42, 17, 0 ]
@@ -19,7 +19,7 @@ tasks:
         name: 'mnlp'
         config_path: '../configs/'
         config_name: 'al_ner.yaml'
-        command: './src/run_active_learning.py'
+        command: './acleto/run_active_learning.py'
         environ: ''
         args: 'al.strategy=mnlp'
         seeds: [ 13, 42, 17, 0 ]
@@ -28,7 +28,7 @@ tasks:
         name: 'random'
         config_path: '../configs/'
         config_name: 'al_ner.yaml'
-        command: './src/run_active_learning.py'
+        command: './acleto/run_active_learning.py'
         environ: ''
         args: 'al.strategy=random'
         seeds: [ 13, 42, 17, 0 ]
@@ -37,7 +37,7 @@ tasks:
         name: 'me_var'
         config_path: '../configs/'
         config_name: 'al_ner.yaml'
-        command: './src/run_active_learning.py'
+        command: './acleto/run_active_learning.py'
         environ: ''
         args: 'al.strategy=mean_ent_de_ner al.deep_ensemble=True'
         seeds: [ 13, 42, 17, 0 ]
@@ -47,7 +47,7 @@ tasks:
         name: 'bald_var'
         config_path: '../configs/'
         config_name: 'al_ner.yaml'
-        command: './src/run_active_learning.py'
+        command: './acleto/run_active_learning.py'
         environ: ''
         args: 'al.strategy=bald_de_ner al.deep_ensemble=True'
         seeds: [ 13, 42, 17, 0 ]

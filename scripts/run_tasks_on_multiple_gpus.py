@@ -5,7 +5,7 @@ import time
 import hydra
 from numpy.random import randint
 
-from acleto.src.al4nlp.utils import utils_tasks as utils
+from acleto.al4nlp.utils import utils_tasks as utils
 
 log = logging.getLogger(__name__)
 

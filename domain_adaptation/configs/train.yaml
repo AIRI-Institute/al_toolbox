@@ -24,7 +24,7 @@ domain_adaptation:
     target_vocab_size: 64000
     train_data_percent: 1.0
     name: 'test'
-    model_save_dir: '/notebook/active_learning_nlp/src/workdir/adapted_model'
+    model_save_dir: '/notebook/active_learning_nlp/acleto/workdir/adapted_model'
 
 acquisition_model:
     type: 'ner'

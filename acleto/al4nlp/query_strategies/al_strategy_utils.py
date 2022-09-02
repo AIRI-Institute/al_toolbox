@@ -10,8 +10,6 @@ from typing import List, Union, Tuple
 
 import numpy as np
 import torch
-from al4nlp.model_wrappers.transformers.wrapper_cls import WrapperCls
-from al4nlp.model_wrappers.transformers.wrapper_ner import WrapperNer
 from datasets import load_metric, concatenate_datasets
 from datasets.arrow_dataset import Dataset as ArrowDataset
 from nltk.tokenize import sent_tokenize, word_tokenize
@@ -44,6 +42,8 @@ from .strategy_utils.gmm import class_probs, gmm_evaluate, gmm_fit_, compute_den
 from ..utils.general import json_dump, json_load
 from ..utils.get_embeddings import get_embeddings, get_grad_embeddings
 from ..utils.transformers_dataset import TransformersDataset
+from ..model_wrappers.transformers.wrapper_cls import WrapperCls
+from ..model_wrappers.transformers.wrapper_ner import WrapperNer
 
 log = logging.getLogger()
 WRAPPERS = {"cls": WrapperCls, "ner": WrapperNer}

@@ -1,6 +1,6 @@
-from al4nlp.models.fnet import init_fnet
-from al4nlp.models.ner_bilstm import init_tagger, BilstmTagger
-from al4nlp.models.text_classification_cnn import (
+from .fnet import init_fnet
+from .ner_bilstm import init_tagger, BilstmTagger
+from .text_classification_cnn import (
     init_text_classification_cnn,
     TextClassificationCNN,
 )

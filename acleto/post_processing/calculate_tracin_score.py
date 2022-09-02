@@ -125,7 +125,7 @@ def load_model(model_path: str or Path) -> torch.nn.Module:
 
 def load_flair_model(model_path, idx_to_tag, config):
     # here we create model, because we can't pickle it
-    from al4nlp.models.bilstm_crf import create_flair_model_tokenizer
+    from ..al4nlp.models.bilstm_crf import create_flair_model_tokenizer
 
     cache_dir = Path(config.cache_dir) if config.cache_dir is not None else None
     model, tokenizer = create_flair_model_tokenizer(

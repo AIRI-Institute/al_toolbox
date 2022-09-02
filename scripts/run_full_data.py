@@ -7,12 +7,12 @@ from pathlib import Path
 import hydra
 from omegaconf import OmegaConf
 
-from acleto.src.al4nlp.utils.embeddings import (
+from acleto.al4nlp.utils.embeddings import (
     load_embeddings_with_text,
     check_models,
 )
-from acleto.src.al4nlp.utils.general import get_time_dict_path_full_data, log_config
-from acleto.src.al4nlp.utils.main_decorator import main_decorator
+from acleto.al4nlp.utils.general import get_time_dict_path_full_data, log_config
+from acleto.al4nlp.utils.main_decorator import main_decorator
 
 log = logging.getLogger()
 
@@ -28,8 +28,8 @@ OmegaConf.register_new_resolver(
 @main_decorator
 def run_full_data(config, work_dir: Path or str):
     # Imports inside function to set environment variables before imports
-    from acleto.src.al4nlp.constructors import construct_wrapper
-    from acleto.src.al4nlp.utils.data.load_data import load_data
+    from acleto.al4nlp.constructors import construct_wrapper
+    from acleto.al4nlp.utils.data.load_data import load_data
     from datasets import concatenate_datasets
 
     # Log config so that it is visible from the console

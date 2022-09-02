@@ -21,7 +21,7 @@ def initialize_aug(aug, collection):
 
 def augment_instances(
     instances,
-    path_to_augmentator="../../active_learning_nlp/src/aug/ppdb-2.0-tldr",
+    path_to_augmentator="../../active_learning_nlp/acleto/aug/ppdb-2.0-tldr",
     include_original=True,
 ):
 

@@ -7,12 +7,12 @@ from pathlib import Path
 import hydra
 from omegaconf import OmegaConf
 
-from acleto.src.al4nlp.utils.embeddings import (
+from acleto.al4nlp.utils.embeddings import (
     load_embeddings_with_text,
     check_models,
 )
-from acleto.src.al4nlp.utils.general import log_config
-from acleto.src.al4nlp.utils.main_decorator import main_decorator
+from acleto.al4nlp.utils.general import log_config
+from acleto.al4nlp.utils.main_decorator import main_decorator
 
 log = logging.getLogger()
 
@@ -28,12 +28,12 @@ OmegaConf.register_new_resolver(
 @main_decorator
 def run_active_learning(config, work_dir):
     # Imports inside function to set environment variables before imports
-    from acleto.src.al_benchmark.simulated_active_learning import (
+    from acleto.al_benchmark.simulated_active_learning import (
         al_loop,
         initial_split,
     )
-    from acleto.src.al4nlp.utils.data.load_data import load_data
-    from acleto.src.al4nlp.utils.transformers_dataset import TransformersDataset
+    from acleto.al4nlp.utils.data.load_data import load_data
+    from acleto.al4nlp.utils.transformers_dataset import TransformersDataset
 
     # Log config so that it is visible from the console
     log_config(log, config)

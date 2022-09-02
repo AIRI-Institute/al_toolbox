@@ -6,14 +6,14 @@ import hydra
 import numpy as np
 from omegaconf import OmegaConf
 
-from acleto.src.al4nlp.active_selector import ActiveSelector
-from acleto.src.al4nlp.utils.general import (
+from acleto.al4nlp.active_selector import ActiveSelector
+from acleto.al4nlp.utils.general import (
     log_config,
     get_time_dict_path,
     json_dump,
     json_load,
 )
-from acleto.src.al4nlp.utils.main_decorator import main_decorator
+from acleto.al4nlp.utils.main_decorator import main_decorator
 
 log = logging.getLogger()
 
@@ -28,8 +28,8 @@ OmegaConf.register_new_resolver(
 @main_decorator
 def run_active_learning(config, work_dir):
     # Imports inside function to set environment variables before imports
-    from acleto.src.al4nlp.utils.data.load_data import load_data
-    from acleto.src.al_benchmark.simulated_active_learning import (
+    from acleto.al4nlp.utils.data.load_data import load_data
+    from acleto.al_benchmark.simulated_active_learning import (
         create_models,
         probably_fit_and_evaluate_and_log_models,
         log_model,
