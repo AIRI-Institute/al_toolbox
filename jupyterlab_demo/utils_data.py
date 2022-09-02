@@ -1,8 +1,8 @@
-import random
-import pandas as pd
 import logging
 import re
+
 import numpy as np
+import pandas as pd
 
 
 def set_global_logging_level(level=logging.ERROR, prefices=[""]):

@@ -1,2 +1,0 @@
-from al4nlp.model_wrappers.transformers.wrapper_cls import WrapperCls
-from al4nlp.model_wrappers.transformers.wrapper_ner import WrapperNer

@@ -24,9 +24,6 @@ import shutil
 
 import numpy as np
 import torch
-
-from distiller import Distiller
-from lm_seqs_dataset import LmSeqsDataset
 from transformers import (
     BertConfig,
     BertForMaskedLM,
@@ -44,8 +41,10 @@ from transformers import (
     ElectraForMaskedLM,
     ElectraTokenizer,
 )
-from utils import git_log, init_gpu_params, logger, set_seed
 
+from distiller import Distiller
+from lm_seqs_dataset import LmSeqsDataset
+from utils import git_log, init_gpu_params, logger, set_seed
 
 MODEL_CLASSES = {
     "distilbert": (DistilBertConfig, DistilBertForMaskedLM, DistilBertTokenizer),

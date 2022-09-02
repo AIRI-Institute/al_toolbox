@@ -4,6 +4,7 @@ pip install git+https://github.com/IINemo/text_selector.git
 """
 
 from text_selector.widget import Widget as TextSelectorWidget
+
 from .colors import _COLOR_LIST
 
 

@@ -1,8 +1,8 @@
+import logging
+
 import numpy as np
 
 from .annotation_converter import AnnotationConverter
-
-import logging
 
 logger = logging.getLogger()
 

@@ -1,11 +1,10 @@
-import numpy as np
-import pandas as pd
+import logging
 import multiprocessing.dummy as mp
 from multiprocessing import Array
 
-from .active_learner import ActiveLearner
+import pandas as pd
 
-import logging
+from .active_learner import ActiveLearner
 
 logger = logging.getLogger()
 

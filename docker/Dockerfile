@@ -448,8 +448,7 @@ COPY --chown="${NB_UID}:${NB_GID}" ./cache.sh "${HOME}/acleto/jupyterlab_demo/ca
 
 USER root
 
-RUN pip install -e ${HOME}/acleto
-#RUN pip install -r ${HOME}/acleto/requirements.txt
+RUN pip install acleto
 RUN chmod 777 ${HOME}/acleto/jupyterlab_demo/cache.sh && ${HOME}/acleto/jupyterlab_demo/cache.sh
 RUN rm ${HOME}/acleto/jupyterlab_demo/cache.sh
 RUN chown -R "${NB_UID}:${NB_GID}" ${HOME}/acleto/jupyterlab_demo/cache

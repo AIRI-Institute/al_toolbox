@@ -1,1 +1,0 @@
-from al4nlp.model_wrappers.flair.wrapper_flair import FlairModelWrapper

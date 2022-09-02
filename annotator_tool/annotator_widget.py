@@ -1,7 +1,8 @@
-from traitlets import Int, Instance
-from ipywidgets import Button, VBox, HBox, HTML, Box, Layout, Label, Text, ToggleButtons
-import pandas as pd
 import numpy as np
+import pandas as pd
+from ipywidgets import Button, VBox, HBox, HTML, Box, Layout, Label, Text, ToggleButtons
+from traitlets import Int, Instance
+
 from .visualizers import TextAreaVisualizer
 
 

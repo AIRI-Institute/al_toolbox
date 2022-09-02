@@ -1,8 +1,8 @@
+import logging
+
 import numpy as np
 from libact.base.dataset import ensure_sklearn_compat
 from libact.base.interfaces import ProbabilisticModel, ContinuousModel
-
-import logging
 
 log = logging.getLogger("actleto")
 

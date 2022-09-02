@@ -1,7 +1,8 @@
-import numpy as np
-from ipywidgets import Image as WidgImage
-from PIL import Image
 import io
+
+import numpy as np
+from PIL import Image
+from ipywidgets import Image as WidgImage
 
 
 class ImageVisualizer(object):

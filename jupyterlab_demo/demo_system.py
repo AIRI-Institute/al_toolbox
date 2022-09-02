@@ -13,14 +13,13 @@ from functools import partialmethod
 tqdm.__init__ = partialmethod(tqdm.__init__, disable=True)
 
 import numpy as np
-import sys
 from yaspin import yaspin
 from pathlib import Path
 from tabulate import tabulate
 
 import ipywidgets as widgets
-from ipywidgets import Layout, VBox
-from IPython.display import clear_output, display
+from ipywidgets import Layout
+from IPython.display import display
 
 import transformers
 

@@ -1,16 +1,13 @@
-from .annotator_widget import AnnotatorWidget
-
-from ipywidgets import Button, VBox, HBox, Label, FloatProgress, Label, Layout
-import pandas as pd
-import numpy as np
 import json
 import logging
-from threading import Timer
-import os
 from datetime import datetime
+from threading import Timer
+
+import pandas as pd
+from ipywidgets import Button, VBox, HBox, Label, Layout
 
 from .annotation_converter import AnnotationConverterDefault
-
+from .annotator_widget import AnnotatorWidget
 
 logger = logging.getLogger()
 

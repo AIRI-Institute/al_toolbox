@@ -2,8 +2,8 @@ import torch
 import torch.nn as nn
 from tokenizers import Tokenizer
 from tokenizers.models import WordLevel
-from tokenizers.pre_tokenizers import Whitespace
 from tokenizers.normalizers import Lowercase
+from tokenizers.pre_tokenizers import Whitespace
 from transformers import PreTrainedTokenizerFast
 
 # in this file one should define model class and constructor function

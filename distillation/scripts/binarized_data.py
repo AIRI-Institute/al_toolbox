@@ -22,9 +22,8 @@ import random
 import time
 
 import numpy as np
-
-from transformers import BertTokenizer, GPT2Tokenizer, RobertaTokenizer, AutoTokenizer
 from datasets import load_dataset
+from transformers import BertTokenizer, GPT2Tokenizer, RobertaTokenizer, AutoTokenizer
 
 logging.basicConfig(
     format="%(asctime)s - %(levelname)s - %(name)s - %(message)s",

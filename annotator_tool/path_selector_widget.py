@@ -1,7 +1,8 @@
-import ipywidgets as widgets
-from ipywidgets import VBox
-from IPython.display import display
 import os
+
+import ipywidgets as widgets
+from IPython.display import display
+from ipywidgets import VBox
 
 
 def select_data_folders(path):

@@ -1,7 +1,6 @@
-from pathlib import Path
-from setuptools import setup, find_packages
 import os
 
+from setuptools import setup, find_packages
 
 requirements = [
     "hydra-core==1.1.0",
@@ -54,9 +53,9 @@ os.system("chmod a+x init.sh examples/*")
 setup(
     name="acleto",
     packages=find_packages(
-        exclude=["*.tests", "*.tests.*", "tests.*", "tests", "*.trainable_sampling*"]
+        exclude=["*.tests", "*.tests.*", "tests.*", "tests"]
     ),
-    version="0.0.1",
+    version="0.0.2",
     description="A Library for active learning. Supports text classification and sequence tagging tasks.",
     author="Tsvigun A., Sanochkin L., Kuzmin G., Larionov D., and Dr Shelmanov A.",
     license="MIT",

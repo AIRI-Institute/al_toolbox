@@ -2,7 +2,6 @@ import warnings
 
 warnings.filterwarnings("ignore")
 
-import pickle
 import copy
 import json
 import os
@@ -10,7 +9,6 @@ from pathlib import Path
 import numpy as np
 import pandas as pd
 import torch
-from seqeval.metrics import f1_score, precision_score, recall_score
 from hydra import compose, initialize, core
 import matplotlib.pyplot as plt
 from collections import OrderedDict

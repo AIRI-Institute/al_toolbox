@@ -1,8 +1,7 @@
-from .utils import MultipleQueryStrategy
-from libact.base.dataset import Dataset
-import numpy as np
-
 import logging
+
+import numpy as np
+from libact.base.dataset import Dataset
 
 logger = logging.getLogger("actleto")
 

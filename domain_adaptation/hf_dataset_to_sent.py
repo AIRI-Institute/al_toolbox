@@ -1,10 +1,10 @@
-import hydra
+import logging
 import os
 from pathlib import Path
+
+import hydra
 from datasets import load_dataset, Dataset
 from tqdm import tqdm
-import logging
-
 
 log = logging.getLogger()
 
