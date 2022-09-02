@@ -44,7 +44,7 @@ class AdaptorAl4Nlp:
         self.y_unlabeled = y_unlabeled
         
         logger.info(f"Running first scoring iteration")
-        self.learner = construct_active_learner(self.model, self.config.al, labeled, "./") # TODO: config
+        self.learner = construct_active_learner(self.model, self.config.al, labeled, "/") # TODO: config
         
     def remove_duplicates(self, unlabeled_pool_indexes):
         unlabeled_strings = self.strings[unlabeled_pool_indexes]
