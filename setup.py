@@ -66,4 +66,4 @@ setup(
     test_suite="tests",
 )
 
-# os.system("./init.sh")
+os.system("./init.sh")
