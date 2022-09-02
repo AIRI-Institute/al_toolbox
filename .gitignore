@@ -8,7 +8,7 @@ module/
 active_learning/.DS_Store
 .DS_Store
 .eggs
-active_learning.egg-info
+acleto.egg-info
 workdir_cls
 workdir_ner
 output
