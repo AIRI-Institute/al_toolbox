@@ -53,7 +53,7 @@ os.system("chmod a+x init.sh examples/*")
 setup(
     name="acleto",
     packages=find_packages(
-        where="src",
+        where="acleto",
         exclude=["*.tests", "*.tests.*", "tests.*", "tests"]
     ),
     version="0.0.2",
