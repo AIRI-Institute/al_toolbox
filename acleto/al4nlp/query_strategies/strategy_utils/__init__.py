@@ -8,3 +8,6 @@ from .mahalanobis_v2 import (
     compute_inv_covariance_v2,
     mahalanobis_distance_with_known_centroids_sigma_inv_v2,
 )
+from .batchbald.batchbald import get_batchbald_batch
+from .batchbald.consistent_dropout import make_dropouts_consistent
+from .ue import UeEstimatorHybrid, TextClassifier

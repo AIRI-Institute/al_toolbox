@@ -24,9 +24,9 @@ from .al_strategy_utils import (
     calculate_badge_scores,
     choose_cm_samples,
 )
-from .strategy_utils.batchbald.batchbald import get_batchbald_batch
-from .strategy_utils.batchbald.consistent_dropout import make_dropouts_consistent
-from .strategy_utils.ue import UeEstimatorHybrid, TextClassifier
+from .strategy_utils import get_batchbald_batch
+from .strategy_utils import make_dropouts_consistent
+from .strategy_utils import UeEstimatorHybrid, TextClassifier
 from ..utils.augmentation import augment_instances
 from ..utils.cluster_utils import badge, kmeans
 from ..utils.transformers_dataset import TransformersDataset
