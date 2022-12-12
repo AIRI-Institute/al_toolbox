@@ -22,6 +22,6 @@ By default all outputs save in the folder demo.nlpresearch.group/user/username/t
 - annotation.json - annotated data
 
 If you don't want to save model on each iteration of active learning you need to
-add a field al.save_checkpoints=False in the config file. All using configs locate in the current path: demo.nlpresearch.group/user/username/tree/acleto/jupyterlab_demo/configs
+add a field al.save_checkpoints = False in the config file. All using configs locate in the current path: demo.nlpresearch.group/user/username/tree/acleto/jupyterlab_demo/configs
 
 For more information check :ref:`config_structure`
